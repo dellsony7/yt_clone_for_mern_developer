@@ -46,9 +46,18 @@ export const categories = [
   { name: "Crypto", icon: <DeveloperModeIcon /> },
 ];
 
-export const demoThumbnailUrl = "";
-export const demoChannelUrl = "/channel/@realmadrid";
-export const demoVideoUrl = "/shorts/Byo436O1uT0";
-export const demoChannelTitle = "React JS by Dellsony";
-export const demoVideoTitle = "";
-export const demoProfilePicture = "";
+// export const demoThumbnailUrl = "";
+// export const demoChannelUrl = "/channel/@realmadrid";
+// export const demoVideoUrl = "/shorts/Byo436O1uT0";
+// export const demoChannelTitle = "React JS by Dellsony";
+// export const demoVideoTitle = "";
+// export const demoProfilePicture = "";
+
+export const demoThumbnailUrl = "https://i.ibb.co/G2L2Gwp/API-Course.png";
+export const demoChannelUrl = "/channel/UCmXmlB4-HJytD7wek0Uo97A";
+export const demoVideoUrl = "/video/GDa8kZLNhJ4";
+export const demoChannelTitle = "JavaScript Mastery";
+export const demoVideoTitle =
+  "Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI";
+export const demoProfilePicture =
+  "http://dergipark.org.tr/assets/app/images/buddy_sample.png";
