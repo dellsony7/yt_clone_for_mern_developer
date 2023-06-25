@@ -7,14 +7,20 @@ import { Videos, Sidebar } from "./";
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos, setVideos] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setVideos(null);
+    setLoading(true); // Set loading state to true when fetching data
 
-    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) =>
-      setVideos(data.items)
-    );
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
+      .then((data) => setVideos(data.items))
+      .finally(() => setLoading(false)); // Set loading state to false when data is fetched
   }, [selectedCategory]);
+
+  // Display loading state if loading is true
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
